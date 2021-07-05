@@ -51,8 +51,7 @@ export const TOKENS_BY_NETWORK: {
     },
   ],
 }
-export const shorter = (str) =>
-  str?.length > 8 ? str.slice(0, 6) + '...' + str.slice(-4) : str
+export const shorter = (str: string) => str?.length > 8 ? str.slice(0, 6) + '...' + str.slice(-4) : str
 
 // export const fetcher = (library: Web3Provider, abi?: any) => (...args) => {
 //   const [arg1, arg2, ...params] = args
